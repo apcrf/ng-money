@@ -11,3 +11,9 @@
 ♦ Кстати, это бесплатно!
 ng-money - это бесплатно.
 И всегда будет бесплатно!
+
+♦ Используемый фреймворк: AngularJS v1.4.8
+https://angularjs.org/
+
+♦ Платформа: Google App Engine
+https://cloud.google.com/appengine/
