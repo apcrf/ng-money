@@ -1,0 +1,22 @@
+<link rel="stylesheet" type="text/css" href="css/period.css" />
+
+<form>
+
+    <select class="periodSelect" ng-model="period.Selector" ng-options="opt.ID as opt.Text group by opt.Group for opt in period.Selectors" ng-change="dataLoad()">
+    </select>
+
+    <input type="number" class="periodYear" ng-model="period.Year" min="1" max="9999" ng-if="period.Selector!=0&&period.Selector!=300" ng-change="dataLoad()">
+
+    <input type="date" class="periodDate" ng-model="period.b_obj" ng-if="period.Selector==300" ng-blur="dataLoad()">
+    <input type="date" class="periodDate" ng-model="period.e_obj" ng-if="period.Selector==300" ng-blur="dataLoad()">
+
+    <button class="periodButtonReLoad" ng-click="dataLoad()" title="Обновить список">
+    <img class="periodButtonImg" src="images/btn_refresh.png">
+    </button>
+
+    <button class="periodButtonInsert" ng-click="dataInsert()" ng-if="selectedArticle=='money'" title="Добавить новую запись">
+    <img class="periodButtonImg" src="images/btn_plus.png">
+    <p class="periodButtonP"> Добавить запись </p>
+    </button>
+
+</form>

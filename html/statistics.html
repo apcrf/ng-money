@@ -1,0 +1,24 @@
+<link rel="stylesheet" type="text/css" href="css/statistics.css" />
+
+<div ng-controller="statisticsController">
+
+    <div class="materialWide" ng-include="'html/period.html'">
+    </div>
+
+    <div class="materialWide">
+
+        <div class="statSelectContainer">
+
+            <div class="statSelectCaption">Отчёт или Диаграмма:</div>
+
+            <select class="statSelect" ng-model="stat.Selector" ng-options="opt.ID as opt.Text group by opt.Group for opt in stat.Selectors" ng-change="dataLoad()">
+            </select>
+
+        </div>
+
+    </div>
+
+    <div ng-include="'html/' + stat.HTML + '.html'">
+    </div>
+
+</div>

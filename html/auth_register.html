@@ -1,0 +1,39 @@
+<link rel="stylesheet" type="text/css" href="css/auth.css" />
+
+<form class="authForm authFormRegister" ng-controller="authRegisterController">
+
+    <span class="authTitle"> Регистрация </span>
+
+    <hr class="authHr">
+
+    <label class="authLabel">
+        логин:
+        <br>
+        <input type="text" class="authField" ng-model="auth.User_Login" ng-disabled="authIsDisabled" autofocus>
+    </label>
+
+    <label class="authLabel">
+        пароль:
+        <br>
+        <input type="password" class="authField" ng-model="auth.User_Pass_1" ng-disabled="authIsDisabled">
+    </label>
+
+    <label class="authLabel">
+        пароль (ещё раз):
+        <br>
+        <input type="password" class="authField" ng-model="auth.User_Pass_2" ng-disabled="authIsDisabled">
+    </label>
+
+    <span class="authTextRed">
+        {{authMessage}}
+    </span>
+
+    <button class="authButton" ng-click="authButtonClick()" ng-disabled="authIsDisabled">
+        {{authButtonCaption}}
+    </button>
+
+    <span class="authAhref" ng-click="selectArticle('auth_login')" ng-show="!authIsDisabled">
+        Уже регистрировались?
+    </span>
+
+</form>

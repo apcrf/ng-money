@@ -1,0 +1,41 @@
+<link rel="stylesheet" type="text/css" href="css/money.css" />
+
+<div ng-controller="moneyController">
+
+    <div class="materialWide" ng-include="'html/period.html'">
+    </div>
+
+    <form class="moneyForm" name="moneyForm">
+        <table>
+            <tr>
+                <th class="thDate">Дата</th>
+                <th class="thDebet">Доход</th>
+                <th class="thKredit">Расход</th>
+                <th class="thCategory">Категория</th>
+                <th class="thNote">Примечание</th>
+                <th class="thDelete"></th>
+            </tr>
+            <tr ng-repeat="m in money">
+                <td>
+                    <input type="date" class="ti tiDate" ng-model="m.Money_Date_obj" ng-keypress="dataUpdateKeypress($event)" ng-blur="dataUpdateBlur($index)">
+                </td>
+                <td>
+                    <input type="text" class="ti tiDecimal" ng-model="m.Money_Debet" ng-keypress="dataUpdateKeypress($event)" ng-blur="dataUpdateBlur($index)">
+                </td>
+                <td>
+                    <input type="text" class="ti tiDecimal" ng-model="m.Money_Kredit" ng-keypress="dataUpdateKeypress($event)" ng-blur="dataUpdateBlur($index)">
+                </td>
+                <td>
+                    <input type="text" class="ti tiVarChar" ng-model="m.Money_Category" ng-keypress="dataUpdateKeypress($event)" ng-blur="dataUpdateBlur($index)">
+                </td>
+                <td>
+                    <input type="text" class="ti tiVarChar" ng-model="m.Money_Note" ng-keypress="dataUpdateKeypress($event)" ng-blur="dataUpdateBlur($index)">
+                </td>
+                <td>
+                    <img src="images/btn_delete.png" class="tiDeleteImg" ng-click="dataDelete($index)">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</div>

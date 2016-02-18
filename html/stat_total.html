@@ -1,0 +1,28 @@
+<link rel="stylesheet" type="text/css" href="css/stat_total.css" />
+
+<div class="materialWide">
+
+    <table>
+        <tr>
+            <th class="thRest">на Начало</th>
+            <th class="thDebet">Доход</th>
+            <th class="thKredit">Расход</th>
+            <th class="thTotal">Остаток</th>
+        </tr>
+        <tr ng-repeat="m in stat.Report">
+            <td>
+                <input type="text" class="ti tiRest" ng-model="m.Money_Rest">
+            </td>
+            <td>
+                <input type="text" class="ti tiDecimal" ng-model="m.Money_Debet">
+            </td>
+            <td>
+                <input type="text" class="ti tiDecimal" ng-model="m.Money_Kredit">
+            </td>
+            <td>
+                <input type="text" class="ti tiTotal" ng-model="m.Money_Total">
+            </td>
+        </tr>
+    </table>
+
+</div>

@@ -1,0 +1,21 @@
+<link rel="stylesheet" type="text/css" href="css/auth.css" />
+
+<form class="authForm authFormLogout" ng-controller="authLogoutController">
+
+    <span class="authTitle"> Выход </span>
+
+    <hr class="authHr">
+
+    <br>
+
+    <span class="authText"> Уже уходите? </span>
+    <span class="authText"> Так быстро? </span>
+
+    <br>
+    <br>
+
+    <button class="authButton" ng-click="authButtonClick()" ng-disabled="authIsDisabled">
+        {{authButtonCaption}}
+    </button>
+
+</form>
