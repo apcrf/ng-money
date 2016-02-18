@@ -19,7 +19,7 @@ ng-money - это бесплатно.
 ♦ Используемый фреймворк: AngularJS v1.4.8
 https://angularjs.org/
 
-![alt tag](https://ru.wikipedia.org/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:Appengine.gif#/media/File:Appengine.gif)
+![alt tag](https://cloud.google.com/images/appengine-icon-54x48.png)
 ♦ Платформа: Google App Engine
 https://cloud.google.com/appengine/
 
