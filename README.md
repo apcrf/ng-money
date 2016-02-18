@@ -17,3 +17,5 @@ https://angularjs.org/
 
 ♦ Платформа: Google App Engine
 https://cloud.google.com/appengine/
+
+![alt tag](https://ng-money.appspot.com/images/landing_page_anytime_and_anywhere.png)
