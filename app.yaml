@@ -1,0 +1,61 @@
+application: ng-money
+version: 1
+runtime: php55
+api_version: 1
+threadsafe: yes
+
+#*****************************************************************************************************
+
+handlers:
+
+# Иконка сайта
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+# Картинки
+- url: /images
+  static_dir: images
+
+# Таблицы стилей
+- url: /css
+  static_dir: css
+
+# Java скрипты
+- url: /js
+  static_dir: js
+
+# HTML страницы
+- url: /html
+  static_dir: html
+
+#*****************************************************************************************************
+
+# AJAX запросы
+- url: /index_load
+  script: php/index_load.php
+  secure: always
+- url: /auth_register
+  script: php/auth_register.php
+  secure: always
+- url: /auth_login
+  script: php/auth_login.php
+  secure: always
+- url: /auth_logout
+  script: php/auth_logout.php
+  secure: always
+- url: /money
+  script: php/money.php
+  secure: always
+- url: /statistics
+  script: php/statistics.php
+  secure: always
+
+#*****************************************************************************************************
+
+# Обращение к любой странице
+- url: /.*
+  script: index.html
+  secure: always
+
+#*****************************************************************************************************

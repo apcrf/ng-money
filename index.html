@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html ng-app="App" ng-controller="Controller" ng-cloak>
+
+<script src="js/angular.min.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <title> {{app.name}} - {{app.about}} </title>
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+</head>
+
+<body>
+
+<header>
+    <div class="wrapper">
+        <menu>
+            <li class="menuTopItem menuTopItemLeft"  ng-class="{'menuTopItemSelected':selectedArticle=='landing_page'}"  ng-click="selectArticle('landing_page')"  ng-if="user.User_Login==''"> {{app.name}} </li>
+            <li class="menuTopItem menuTopItemLeft"  ng-class="{'menuTopItemSelected':selectedArticle=='home_page'}"     ng-click="selectArticle('home_page')"     ng-if="user.User_Login!=''"> {{app.name}} </li>
+            <li class="menuTopItem menuTopItemLeft"  ng-class="{'menuTopItemSelected':selectedArticle=='money'}"         ng-click="selectArticle('money')"         ng-if="user.User_Login!=''"> Деньги </li>
+            <li class="menuTopItem menuTopItemLeft"  ng-class="{'menuTopItemSelected':selectedArticle=='statistics'}"    ng-click="selectArticle('statistics')"    ng-if="user.User_Login!=''"> Статистика </li>
+            <li class="menuTopItem menuTopItemRight" ng-class="{'menuTopItemSelected':selectedArticle=='auth_register'}" ng-click="selectArticle('auth_register')" ng-if="user.User_Login==''"> Регистрация </li>
+            <li class="menuTopItem menuTopItemRight" ng-class="{'menuTopItemSelected':selectedArticle=='auth_login'}"    ng-click="selectArticle('auth_login')"    ng-if="user.User_Login==''"> Вход </li>
+            <li class="menuTopItem menuTopItemRight" ng-class="{'menuTopItemSelected':selectedArticle=='auth_logout'}"   ng-click="selectArticle('auth_logout')"   ng-if="user.User_Login!=''"> Выход </li>
+            <li class="menuTopItem menuTopItemRight" ng-class="{'menuTopItemSelected':selectedArticle=='auth_profile'}"  ng-click="selectArticle('auth_profile')"  ng-if="user.User_Login!=''"> {{user.User_Login}} </li>
+        </menu>
+    </div>
+</header>
+
+<main>
+    <div class="wrapper">
+        <article id="article" ng-include="'html/' + selectedArticle + '.html'">
+        </article>
+        <aside id="aside" ng-include="'html/aside.html'">
+        </aside>
+    </div>
+</main>
+
+<footer id="footer">
+    <div class="wrapper">
+        <div class="footerText"> Copyright by&nbsp; - APC - &nbsp;&nbsp; 2015 - 2016 </div>
+    </div>
+</footer>
+
+<script src="js/index_asideFix.js"></script>
+
+<script src="js/index.js"></script>
+<script src="js/class_box.js"></script>
+<script src="js/class_wait.js"></script>
+<script src="js/function_dateToDMY.js"></script>
+<script src="js/function_dateToString.js"></script>
+<script src="js/function_decimalFormat.js"></script>
+<script src="js/function_monthLong.js"></script>
+<script src="js/function_txtToSQL.js"></script>
+<script src="js/auth_register.js"></script>
+<script src="js/auth_login.js"></script>
+<script src="js/auth_logout.js"></script>
+<script src="js/money.js"></script>
+<script src="js/statistics.js"></script>
+
+</body>
+
+</html>
