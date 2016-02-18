@@ -15,7 +15,7 @@
 ng-money - это бесплатно.
 И всегда будет бесплатно!
 
-![alt tag](https://ng-money.appspot.com/images/landing_page_its_free.png)
+![alt tag](https://angularjs.org/img/AngularJS-large.png)
 ♦ Используемый фреймворк: AngularJS v1.4.8
 https://angularjs.org/
 
