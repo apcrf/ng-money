@@ -4,8 +4,7 @@ https://ng-money.appspot.com/
 -----------------------------
 
 ![alt tag](https://ng-money.appspot.com/images/landing_page_site_help_you.png)
-Сайт поможет Вам:
------------------
+## Сайт поможет Вам:
 * учесть Доходы
 * учесть Расходы
 * построить сводные диаграммы
