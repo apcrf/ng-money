@@ -1,0 +1,217 @@
+/**************************************************************************************************/
+/*
+#6495ED; / defaultColor / cornflowerblue /
+#C0F1FF; / lightColor /
+#DBFCFF; / x-lightColor /
+*/
+/**************************************************************************************************/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Remove button padding in FF */
+::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/**************************************************************************************************/
+
+body {
+    overflow-y: scroll;
+    background: ghostwhite;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    top: 0;
+    background: cornflowerblue; /* defaultColor */
+    box-shadow: 0 8px 6px -4px silver;
+    z-index: 100;
+}
+
+/*
+Свойства min-height в main и в article - вертикальные распорки.
+Работает та, которая в данный момент больше.
+Распорка в article == высоте aside + 20px
+*/
+
+main {
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    min-height: calc( 100vh - 50px - 20px - 20px - 50px );
+}
+
+article {
+    box-sizing: border-box;
+    float: left;
+    width:  calc( 100% - 300px - 10px );
+    min-height: calc( 780px + 20px );
+}
+
+aside {
+    box-sizing: border-box;
+    width: 300px;
+    height: 780px;
+    margin-left: calc( 100% - 300px - 10px );
+    padding: 20px;
+    color: gainsboro;
+    background: white;
+    border: 1px solid gainsboro;
+}
+
+footer {
+    clear: both;
+    height: 50px;
+    background: grey;
+}
+
+.wrapper {
+    max-width: 1200px;
+    min-width: 950px;
+    margin: 0 auto;
+}
+
+/**************************************************************************************************/
+
+.menuTopItem {
+    list-style-type: none;
+    float: left;
+    padding: 0 20px;
+    line-height: 50px;
+    font-size: larger;
+    font-family: sans-serif;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    color: #C0F1FF; /* lightColor */
+}
+.menuTopItem:hover {
+    color: #DBFCFF; /* x-lightColor */
+}
+
+.menuTopItemLeft {
+    float: left;
+}
+
+.menuTopItemRight {
+    float: right;
+}
+
+.menuTopItemSelected {
+    cursor: default;
+    color: white;
+}
+.menuTopItemSelected:hover {
+    color: white;
+}
+
+/**************************************************************************************************/
+
+.material {
+    box-sizing: border-box;
+    width: 620px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    padding-left: 30px;
+    line-height: 25px;
+    font-size: medium;
+    font-family: sans-serif;
+    color: dimgray;
+    background: white;
+    border: 1px solid gainsboro;
+}
+
+.materialWide {
+    box-sizing: border-box;
+    width: calc( 100% - 10px - 10px );
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    line-height: 28px;
+    font-size: medium;
+    font-family: sans-serif;
+    color: dimgray;
+    background: white;
+    border: 1px solid gainsboro;
+}
+
+.materialDiv {
+    padding: 10px;
+    height: 75px;
+}
+
+.materialImg {
+    float: left;
+    padding-right: 20px;
+    padding-top: 15px;
+    max-height: 70px;
+}
+
+.materialTitle {
+    font-size: x-large;
+    font-style: italic;
+    color: dimgray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.materialHighLighted {
+    font-size: large;
+    color: cornflowerblue; /* defaultColor */
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.materialSmall {
+    font-size: small;
+    color: dimgray;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.materialButton {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 120px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: medium;
+    cursor: pointer;
+    background: whitesmoke;
+    border: 1px solid gainsboro;
+}
+.materialButton:hover {
+    border-color: silver;
+}
+
+.materialAhref {
+    cursor: pointer;
+    color: cornflowerblue; /* defaultColor */
+}
+.materialAhref:hover {
+    text-decoration: underline;
+}
+
+/**************************************************************************************************/
+
+.footerText {
+    float: left;
+    padding: 0 20px;
+    line-height: 50px;
+    font-size: medium;
+    font-family: sans-serif;
+    color: ghostwhite;
+}
+
+/**************************************************************************************************/

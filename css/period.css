@@ -1,0 +1,114 @@
+/**************************************************************************************************/
+
+.periodSelect {
+    box-sizing: border-box;
+    width: 197px;
+    height: 30px;
+    padding-left: 10px;
+    font-size: 16px;
+    font-family: sans-serif;
+    cursor: pointer;
+    border: 1px solid gainsboro;
+}
+.periodSelect:hover {
+    border-color: silver;
+}
+.periodSelect option {
+    color: black;
+    background: white;
+}
+.periodSelect optgroup {
+    color: #606060;
+    background: whitesmoke;
+}
+
+.periodYear {
+    box-sizing: border-box;
+    width: 75px;
+    height: 30px;
+    margin-left: 5px;
+    padding-left: 10px;
+    font-size: 16px;
+    font-family: sans-serif;
+    border: 1px solid gainsboro;
+}
+.periodYear:hover {
+    border-color: silver;
+}
+
+.periodDate {
+    box-sizing: border-box;
+    width: 150px;
+    height: 30px;
+    margin-left: 5px;
+    text-align: center;
+    font-size: 15px;
+    font-family: sans-serif;
+    border: 1px solid gainsboro;
+}
+.periodDate:hover {
+    border-color: silver;
+}
+
+/*------------------------------------------------------------------------------------------------*/
+
+.periodButtonReLoad {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    padding: 4px;
+    vertical-align: bottom;
+    font-size: medium;
+    cursor: pointer;
+    border: 1px solid gainsboro;
+    background: whitesmoke;
+}
+.periodButtonReLoad:hover {
+    border-color: silver;
+}
+
+.periodButtonImg {
+    width: 20px;
+    height: 20px;
+}
+
+/*------------------------------------------------------------------------------------------------*/
+
+.periodButtonInsert {
+    float: right;
+    height: 30px;
+    padding: 4px 6px;
+    vertical-align: bottom;
+    font-size: medium;
+    cursor: pointer;
+    border: 1px solid gainsboro;
+    background: whitesmoke;
+}
+.periodButtonInsert:hover {
+    border-color: silver;
+}
+
+.periodButtonImg {
+    width: 20px;
+    height: 20px;
+}
+
+.periodButtonP {
+    display: inline-block;
+    position: relative;
+    width: 140px;
+    height: 20px;
+    top: -5px;
+}
+
+/**************************************************************************************************/
+
+@media screen and ( max-width: 1110px ) {
+
+.periodButtonP {
+    display: none;
+}
+
+}
+
+/**************************************************************************************************/

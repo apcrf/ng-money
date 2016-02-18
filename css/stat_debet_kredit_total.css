@@ -1,0 +1,93 @@
+/**************************************************************************************************/
+
+.statForm {
+    box-sizing: border-box;
+    width: calc( 100% - 10px - 10px );
+    margin: 0 auto 20px auto;
+}
+
+/*------------------------------------------------------------------------------------------------*/
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table tr {
+    height: 30px;
+}
+table tr:nth-child(odd) {
+    background-color: whitesmoke;
+}
+table tr:nth-child(even) {
+    background-color: white;
+}
+
+table th {
+    line-height: 28px;
+    font-size: 16px;
+    font-family: sans-serif;
+    color: white;
+    background-color: #76A7FA;
+    border: 1px solid gainsboro;
+}
+
+table td {
+    border: 1px solid gainsboro;
+}
+
+/*------------------------------------------------------------------------------------------------*/
+
+.thDate {
+    width: 90px;
+}
+.thDebet {
+    width: 100px;
+}
+.thKredit {
+    width: 100px;
+}
+.thTotal {
+    width: 100px;
+    background-color: #5687E1;
+}
+.thCategory {
+    width: calc( 50% - 195px );
+}
+.thNote {
+    width: calc( 50% - 195px );
+}
+
+/*------------------------------------------------------------------------------------------------*/
+
+.ti {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 0 5px;
+    line-height: 28px;
+    font-size: 15px;
+    font-family: sans-serif;
+    background: transparent;
+    border: none;
+}
+
+.tiDate {
+    text-align: center;
+}
+
+.tiDecimal {
+    text-align: right;
+}
+
+.tiTotal {
+    text-align: right;
+    color: blue;
+}
+
+.tiVarChar {
+}
+
+/**************************************************************************************************/
