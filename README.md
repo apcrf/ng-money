@@ -1,15 +1,15 @@
-ng-money - учёт доходов и расходов
-==================================
-https://ng-money.appspot.com/
------------------------------
+### ng-money - учёт доходов и расходов
 
-![alt tag](https://ng-money.appspot.com/images/landing_page_site_help_you.png)
-## Сайт поможет Вам:
+#### https://ng-money.appspot.com/
+
+![landing_page_site_help_you](https://ng-money.appspot.com/images/landing_page_site_help_you.png)
+
+**Сайт поможет Вам:**
 * учесть Доходы
 * учесть Расходы
 * построить сводные диаграммы
 
-![alt tag](https://ng-money.appspot.com/images/landing_page_anytime_and_anywhere.png)
+![landing_page_anytime_and_anywhere](https://ng-money.appspot.com/images/landing_page_anytime_and_anywhere.png)
 
 Всегда и Везде!
 ---------------
@@ -20,7 +20,7 @@ https://ng-money.appspot.com/
 * телевизор
 * телефон и т.п.
 
-![alt tag](https://ng-money.appspot.com/images/landing_page_its_free.png)
+![landing_page_its_free](https://ng-money.appspot.com/images/landing_page_its_free.png)
 
 Кстати, это бесплатно!
 ----------------------
