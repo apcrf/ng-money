@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html ng-app="App" ng-controller="Controller">
+
+<script src="js/angular.min.js"></script>
+<script src="js/function_txtToSQL.js"></script>
+<script src="js/function_dateToString.js"></script>
+<script src="js/money_rest_api.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <title> moneyRestAPI </title>
+</head>
+
+<body>
+
+    <div>
+        Test service moneyRestAPI
+    </div>
+
+    <br>
+
+    <div>
+        ( Для работы с API необходимо авторизоваться<br>
+          https://ng-money.appspot.com/<br>
+          Логин: test, Пароль: test )
+    </div>
+
+    <br>
+
+    <div>
+        Загрузка данных за период:<br>
+        GET  /money?queryType=dataLoad&period_b=2015-01-01&period_e=2017-01-01<br>
+        <br>
+        Добавление новой записи<br>
+        POST /money?queryType=dataInsert&Money_Date=2015-02-03&Money_Category=testDataInsert<br>
+        <br>
+        Обновление записи<br>
+        POST /money?queryType=dataUpdate&ID=31&Money_Category=testDataUpdate<br>
+        <br>
+        Удаление записи<br>
+        GET  /money?queryType=dataDelete&ID=23<br>
+    </div>
+
+    <br>
+
+    <div>
+        <button ng-click="moneyLoad('2015-01-01','2017-01-01')"> moneyLoad(period_b,period_e) </button>
+    </div>
+
+    <br>
+
+    <div>
+        <button ng-click="moneyInsert()"> moneyInsert() </button>
+    </div>
+
+    <br>
+
+    <div>
+        <button ng-click="moneyUpdate(138,'Примечание')"> moneyUpdate(Money_ID, Money_Note) </button>
+    </div>
+
+    <br>
+
+    <div>
+        <button ng-click="moneyDelete(137)"> moneyDelete(Money_ID) </button>
+    </div>
+
+    <br>
+
+    <textarea> {{responseAPI}} </textarea>
+
+</body>
+
+</html>
