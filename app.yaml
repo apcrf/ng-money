@@ -53,6 +53,10 @@ handlers:
 
 #*****************************************************************************************************
 
+- url: /money_rest_api
+  script: money_rest_api.html
+  secure: always
+
 # Обращение к любой странице
 - url: /.*
   script: index.html
